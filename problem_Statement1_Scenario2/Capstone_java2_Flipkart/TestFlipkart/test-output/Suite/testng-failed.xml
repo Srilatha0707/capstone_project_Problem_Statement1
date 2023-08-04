@@ -10,6 +10,7 @@
     <classes>
       <class name="com.qa.testscript.Flipkart_001">
         <methods>
+          <include name="checkPosition"/>
           <include name="tearDown"/>
           <include name="checkPopUpCloseButton"/>
           <include name="setUp"/>

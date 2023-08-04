@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-04T15:01:59 IST" name="Suite" finished-at="2023-08-04T15:02:05 IST" duration-ms="6185">
+  <suite started-at="2023-08-04T20:36:34 IST" name="Suite" finished-at="2023-08-04T20:37:24 IST" duration-ms="49881">
     <groups>
     </groups>
-    <test started-at="2023-08-04T15:01:59 IST" name="Test" finished-at="2023-08-04T15:02:05 IST" duration-ms="6185">
+    <test started-at="2023-08-04T20:36:34 IST" name="Test" finished-at="2023-08-04T20:37:24 IST" duration-ms="49881">
       <class name="com.qa.testscript.Flipkart_001">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T15:01:55 IST" name="setUp" finished-at="2023-08-04T15:01:59 IST" duration-ms="3708" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T20:36:29 IST" name="setUp" finished-at="2023-08-04T20:36:34 IST" duration-ms="4756" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,25 +23,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkPopUpCloseButton()[pri:0, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T15:01:59 IST" name="checkPopUpCloseButton" finished-at="2023-08-04T15:01:59 IST" duration-ms="169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkPopUpCloseButton -->
-        <test-method signature="checkPosition()[pri:1, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T15:01:59 IST" name="checkPosition" finished-at="2023-08-04T15:01:59 IST" depends-on-methods="com.qa.testscript.Flipkart_001.checkPopUpCloseButton" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkPosition -->
-        <test-method signature="checkSearch()[pri:2, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T15:01:59 IST" name="checkSearch" finished-at="2023-08-04T15:02:05 IST" depends-on-methods="com.qa.testscript.Flipkart_001.checkPopUpCloseButton" duration-ms="5634" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="checkPopUpCloseButton()[pri:0, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T20:36:34 IST" name="checkPopUpCloseButton" finished-at="2023-08-04T20:37:24 IST" duration-ms="49565" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[Not Naviagted to correct page expected [true] but found [false]]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=115.0.5790.171)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SRIHARSHA', ip: '192.168.0.160', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\pedda\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57150}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1d32564cd3cb2c0dc911d3edbe745fe
+*** Element info: {Using=css selector, value=button._2KpZ6l._2doB4z}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Not Naviagted to correct page expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at com.qa.testscript.Flipkart_001.checkSearch(Flipkart_001.java:70)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=115.0.5790.171)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SRIHARSHA', ip: '192.168.0.160', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\pedda\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57150}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1d32564cd3cb2c0dc911d3edbe745fe
+*** Element info: {Using=css selector, value=button._2KpZ6l._2doB4z}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)
+at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:165)
+at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:61)
+at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.isEnabled(Unknown Source)
+at com.qa.testscript.Flipkart_001.checkPopUpCloseButton(Flipkart_001.java:12)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -70,11 +95,79 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPopUpCloseButton -->
+        <test-method signature="checkPosition()[pri:1, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T20:37:24 IST" name="checkPosition" finished-at="2023-08-04T20:37:24 IST" depends-on-methods="com.qa.testscript.Flipkart_001.checkPopUpCloseButton" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.qa.testscript.Flipkart_001.checkPosition() on instance com.qa.testscript.Flipkart_001@77888435 depends on not successfully finished methods 
+[com.qa.testscript.Flipkart_001.checkPopUpCloseButton() on instance com.qa.testscript.Flipkart_001@77888435]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.qa.testscript.Flipkart_001.checkPosition() on instance com.qa.testscript.Flipkart_001@77888435 depends on not successfully finished methods 
+[com.qa.testscript.Flipkart_001.checkPopUpCloseButton() on instance com.qa.testscript.Flipkart_001@77888435]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPosition -->
+        <test-method signature="checkSearch()[pri:2, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T20:37:24 IST" name="checkSearch" finished-at="2023-08-04T20:37:24 IST" depends-on-methods="com.qa.testscript.Flipkart_001.checkPopUpCloseButton" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.qa.testscript.Flipkart_001.checkSearch() on instance com.qa.testscript.Flipkart_001@77888435 depends on not successfully finished methods 
+[com.qa.testscript.Flipkart_001.checkPopUpCloseButton() on instance com.qa.testscript.Flipkart_001@77888435]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.qa.testscript.Flipkart_001.checkSearch() on instance com.qa.testscript.Flipkart_001@77888435 depends on not successfully finished methods 
+[com.qa.testscript.Flipkart_001.checkPopUpCloseButton() on instance com.qa.testscript.Flipkart_001@77888435]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T15:02:06 IST" name="tearDown" finished-at="2023-08-04T15:02:07 IST" duration-ms="977" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.Flipkart_001@77888435]" started-at="2023-08-04T20:37:25 IST" name="tearDown" finished-at="2023-08-04T20:37:26 IST" duration-ms="493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
